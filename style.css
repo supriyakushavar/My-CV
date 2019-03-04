@@ -11,23 +11,24 @@
 .grid-container{
     padding: 10px;
     display: grid;
+    grid-template-columns:repeat(5,1fr);
     grid-template-areas: 
-    'avatar container'
-    'address container'
-    'languages container'
-    'programming-skills container'
+    'avatar avatar container container container'
+    'address address container container container'
+    'languages languages container container container'
+    'programming-skills programming-skills container container container'
     ;
 }
 
 .box{
     background: #13352f; 
     padding: 20px;
-    color: #fff;
+    color: #fff;    
 }
 
 .avatar {
     grid-area:avatar;
-    
+    grid-column: 1 span 2; 
 }
 
 .avatar img{
