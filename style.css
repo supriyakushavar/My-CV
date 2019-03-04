@@ -1,0 +1,145 @@
+*{
+    box-sizing:border-box;
+}
+
+.container-wrap{
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+
+.grid-container{
+    padding: 10px;
+    display: grid;
+    grid-template-areas: 
+    'avatar container'
+    'address container'
+    'languages container'
+    'programming-skills container'
+    ;
+}
+
+.box{
+    background: #13352f; 
+    padding: 20px;
+    color: #fff;
+}
+
+.avatar {
+    grid-area:avatar;
+    
+}
+
+.avatar img{
+    margin: 0 auto;
+    display: table;
+    border: 2px solid #fff;
+}
+
+.container{
+    grid-area:container;
+    padding: 20px;
+}
+
+.header{
+    background: #ccc;
+    padding: 20px 10px;
+}
+
+.title-container{
+    font-size: 40px;
+    text-align: center;
+    color: #13352f;
+    margin: 0;
+}
+
+ul li{
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.address{
+    grid-area:address;
+    border-bottom: 2px solid #fff;
+}
+
+.address a{
+    background: #fff;
+    color: #000;
+    display: table;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+.languages{
+    grid-area:languages;
+    border-bottom: 2px solid #fff;
+}
+
+.programming-skills{
+    grid-area: programming-skills;
+}
+
+.meter{
+    height: 10px;
+    background: #fff;
+    margin: 0 0 10px;
+}
+
+.meter span{
+    display: block;
+    height: 100%;
+    background: #6F7074;
+}
+
+.box-title{
+    font-size: 20px;
+    margin: 0 0 10px;
+    background: #13352f;
+    color: #fff;
+    padding:5px;
+    text-transform: uppercase;
+}
+
+.box-title-sidebar{
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: #fff;
+    padding:5px;
+    text-transform: uppercase;
+}
+
+
+/* For mobile phones: */
+
+@media only screen and (max-width: 600px) {
+    .grid-container{
+        display: block;
+    }
+
+    .title-container{
+        font-size: 25px;
+        margin: 20px 0 0;
+    }
+
+    .box-title{
+        font-size: 18px;
+    }
+
+    ul li{
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .container{
+        padding: 20px 0;
+    }
+
+    .box{
+        padding: 20px 10px;
+    }
+}
+
+
+
