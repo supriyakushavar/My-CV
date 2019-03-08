@@ -3,9 +3,9 @@
 }
 
 .container-wrap{
-    max-width: 800px;
+    max-width: 978px;
     margin: 0 auto;
-    border: 1px solid #000;
+    border: 2px solid #000;
 }
 
 .grid-container{
@@ -21,7 +21,7 @@
 }
 
 .box{
-    background: #13352f; 
+    background: #67899a;
     padding: 20px;
     color: #fff;    
 }
@@ -50,7 +50,7 @@
 .title-container{
     font-size: 40px;
     text-align: center;
-    color: #13352f;
+    color: #67899a;
     margin: 0;
 }
 
@@ -97,10 +97,9 @@ ul li{
 .box-title{
     font-size: 20px;
     margin: 0 0 10px;
-    background: #13352f;
+    background: #67899a;
     color: #fff;
     padding:5px;
-    text-transform: uppercase;
 }
 
 .box-title-sidebar{
